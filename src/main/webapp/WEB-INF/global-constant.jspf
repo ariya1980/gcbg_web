@@ -1,0 +1,37 @@
+<%-- 
+    Document   : login
+    Created on : Nov 2, 2018, 10:05 AM
+    Author     : kullanit.n
+--%>
+<%@page import="java.io.File"%>
+<%@page import="java.io.InputStreamReader"%>
+<%@page import="java.io.*"%>
+<%@page import="java.net.URL"%>
+<%@page import="java.io.FileReader"%>
+<%@page import="java.io.BufferedReader"%>
+<%@page import="java.util.*"%>
+<%@page import="java.util.regex.*"%>
+<%@page import="java.text.SimpleDateFormat"%>
+
+<%
+InputStream is = application.getResourceAsStream("/WEB-INF/config.txt");
+StringBuilder text = new StringBuilder();
+BufferedReader br = new BufferedReader( new InputStreamReader( is ));
+
+String line;
+List s = new ArrayList<String>();
+while ((line = br.readLine()) != null) {
+	s.add(line.replaceAll(".* = ",""));
+}
+br.close();
+
+%>
+
+<%! 
+	public String getTransactionId() {
+	String COMMON_BASE64_FILE_NAME_FORMAT = "yyyyMMddHHmmssSSSSSS";
+	SimpleDateFormat sdf = new SimpleDateFormat(COMMON_BASE64_FILE_NAME_FORMAT);
+	String transaction_id = sdf.format(new Date());
+	return transaction_id;
+	}
+%>

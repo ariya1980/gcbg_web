@@ -1,0 +1,93 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+	<!--bootstrap-->
+	<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/assets/bootstrap-4.1.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/gcbg-front-main/assets/bootstrap-4.1.1/css/bootstrap.min.css"> -->
+	
+	<!--fontawesome-->
+	<link rel="stylesheet" href="<%= request.getContextPath() %>/assets/fontawesome-free-5.1.0-web/css/all.css">
+	
+	<!-- font -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Prompt:300" rel="stylesheet">  -->
+	<link href="<%= request.getContextPath() %>/css/google-font.css" rel="stylesheet">
+	
+	<!-- jQuery -->
+	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+	<script src="<%= request.getContextPath() %>/assets/jquery/jquery.min.js" ></script>
+	
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>-->
+	<script src="<%= request.getContextPath() %>/assets/gc-js/util/popper.min.js" ></script>
+	<script src="<%= request.getContextPath() %>/assets/bootstrap-4.1.1/js/bootstrap.min.js"></script>
+	<script src="<%= request.getContextPath() %>/assets/bootstrap-4.1.1/js/bootbox.min.js" ></script>
+	
+	<!-- spinner -->
+	<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/assets/spinner/spin.min.css">
+	<script src="<%= request.getContextPath() %>/assets/spinner/jquery.blockUI.min.js"></script>
+	<script src="<%= request.getContextPath() %>/assets/spinner/spin.min.js"></script>
+	<script src="<%= request.getContextPath() %>/assets/gc-js/util/spinner.js" ></script>
+	
+	<!-- Toggle -->
+	<link rel="stylesheet" type="text/css" href="../assets/bootstrap-4.1.1/css/bootstrap-toggle.min.css">
+	<script src="<%= request.getContextPath() %>/assets/bootstrap-4.1.1/js/bootstrap-toggle.js" ></script>
+	
+    <!-- datepccker -->
+    <link rel="stylesheet" type="text/css" href="/gcbg-front-main/assets/datepicker/css/gijgo.min.css">
+    <script src="<%= request.getContextPath() %>/assets/datepicker/js/gijgo.min.js" type="text/javascript"></script>
+    
+    <!-- moment -->
+    <script src="/gcbg-front-main/assets/moment/moment.min.js" type="text/javascript"></script>
+    
+	<!-- dataTable -->
+    <script src="<%= request.getContextPath() %>/assets/datatable/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="<%= request.getContextPath() %>/assets/datatable/dataTables.buttons.min.js" type="text/javascript"></script>
+    <script src="<%= request.getContextPath() %>/assets/datatable/buttons.flash.min.js" type="text/javascript"></script>
+    <script src="<%= request.getContextPath() %>/assets/datatable/jszip.min.js" type="text/javascript"></script>
+    <script src="<%= request.getContextPath() %>/assets/datatable/pdfmake.min.js" type="text/javascript"></script>
+    <script src="<%= request.getContextPath() %>/assets/datatable/vfs_fonts.js" type="text/javascript"></script>
+    <script src="<%= request.getContextPath() %>/assets/datatable/buttons.nightly.html5.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/assets/datatable/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/assets/datatable/buttons.dataTables.min.css">
+
+    <!-- select2 -->
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/assets/select2/select2.min.css">
+	<script src="<%= request.getContextPath() %>/assets/select2/select2.min.js" type="text/javascript"></script>
+	
+	 
+	<!-- 	daterangepicker -->
+	<script src="<%= request.getContextPath() %>/assets/daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/assets/daterangepicker/daterangepicker.css">
+    
+    <!-- main -->
+    <script src="<%= request.getContextPath() %>/js/global.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/css/global.css">
+    <!-- logout -->
+    <script src="<%= request.getContextPath() %>/js/logout.js" type="text/javascript"></script>
+    
+	<style type="text/css">
+		body {
+			background-color: #065baa;
+			font-family: 'Prompt', sans-serif;
+		}
+		.font-sans-serif{
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+		}
+		
+	</style>
+	
+	<script type="text/javascript">
+	//-----Tooltips bootstrap--------//
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+	<div id="spinner"></div>
+
+
+

@@ -1,0 +1,58 @@
+.container {
+	padding-left: 150px;
+	padding-right: 150px;
+}
+.login {
+	width: 100%;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+	margin-top: 10%;
+	
+}
+.logo-form {
+	background-color: #fff;
+	padding: 100px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	
+}
+.login-form {
+	/* background-color: #065baa; */ /* For browsers that do not support gradients */
+   /*  background-image: linear-gradient(to right, #065baa , #161558); */ /* Standard syntax (must be last) */
+  	background-color : #161558;
+    color : #fff;
+    padding-top: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.input-login{
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+}
+.font-de {
+	font-size: 12px;
+	color: #cccccc;
+}
+
+::placeholder {
+    color: #ccc;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #ccc;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #ccc;
+}
+
+
+.hero-image {
+  
+}

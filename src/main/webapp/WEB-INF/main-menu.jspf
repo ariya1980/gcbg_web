@@ -1,0 +1,141 @@
+
+<style type="text/css">
+.all-menu{
+	width: 100%;
+	background-color: #161558; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #161558 , #065baa); /* Standard syntax (must be last) */
+    margin: 0;
+    padding: 0;
+}
+.menu1 {
+list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-left: 50px;
+}
+.menu {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    padding-left: 50px;
+    border-top-left-radius : 80px; 
+}
+.menu-list1{
+	float: left;
+    padding-left : 10px;
+    padding-top : 15px;
+    padding-bottom : 20px;
+}
+.menu-list{
+	float: left;
+    padding-left : 10px;
+    padding-top : 20px;
+    padding-bottom : 30px;
+}
+.menu-a{
+	font-weight: bold;
+	display: block;
+    color: #707070;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu-a1{
+	font-weight: bold;
+	display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.line-r{
+	border-right : 1px solid #707070;
+	margin-left: 10px;
+	font-size: 5px;
+}
+
+.logo{
+	background-color : #fff;
+	padding: 0px 50px 0px 30px;
+}
+.user-menu{
+	width : 100%;
+	color: #fff;
+	border: 1px;
+	font-size: 14px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+	text-align: right;
+}
+
+.click-munu{
+	border-bottom: 3px solid #1b1464;
+    color: #1b1464;
+}
+.click-munu-top{
+	color: #00baff;
+}
+.list-btn{
+	text-transform: uppercase;
+}
+.list-btn-main{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: .25rem;
+	padding-bottom: .25rem;
+	/* cursor: pointer; */
+	text-transform: uppercase;
+	background-color: #5a6268;
+	color: #fff;
+}
+.list-btn-main:hover {
+   /*  background-color: #f2f2f2; */
+}
+</style>
+<script src="<%= request.getContextPath() %>/js/main-menu.js" type="text/javascript"></script>   
+
+<div class="container" style="background-color: #fff;">
+<div style="background: #fff;">
+	<div class="row">
+		<div class="col-md-3" style="padding-right: 0px;">
+			<div class="logo">
+				<img alt="" src="<%= request.getContextPath() %>/assets/images/logo.png" width="100%">
+			</div>
+		</div>
+		<div class="col-md-9" style="padding-left: 0px;padding-right: 0px">
+			<div class="all-menu">
+			
+				<div class="user-menu">
+					<div class="font-weight-bold"><font id="userName">Mr.xxxxxxxxxxxxx</font>
+						<span style="margin-left: 10px;">
+							<button style="border: 0 ; background: none; color: #fff;" class="pointer" type="button" id="dropdownMenuButtonMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-caret-down"></i>
+							</button>
+							<div class="dropdown-menu shadow" aria-labelledby="dropdownMenuButtonMenu">
+								<a class="dropdown-item" href="#" onclick="logout()">Logout</a>
+							</div>
+
+						</span>
+					</div>
+					<p>Employee ID : <span id="userId">000000</span></p>
+				</div>
+
+				
+				
+				<ul class="menu1">
+				  <li class="menu-list1"><a class="menu-a1" style="text-decoration: none;" href="#" id="textMenuTop1" onclick="menuTopOnClick(this)"><i class="fas fa-th-large"></i> DASHBOARD</a></li>
+				  <li class="menu-list1"><a class="menu-a1" style="text-decoration: none;" href="<%= request.getContextPath() %>/view/all-task.jsp" id="textMenuTop2" onclick="menuTopOnClick(this)"><i class="fas fa-folder"></i> ALL TASK</a></li>
+				  <li class="menu-list1"><a class="menu-a1" style="text-decoration: none;" href="<%= request.getContextPath() %>/view/document-in-work-list.jsp" id="textMenuTop3" onclick="menuTopOnClick(this)"><i class="fas fa-file-import"></i> MY DOCUMENT IN</a></li>
+				  <li class="menu-list1"><a class="menu-a1" style="text-decoration: none;" href="<%= request.getContextPath() %>/view/document-out-work-list.jsp" id="textMenuTop4" onclick="menuTopOnClick(this)"><i class="fas fa-file-export"></i> MY DOCUMENT OUT</a></li>
+				</ul>
+				<ul class="menu" id="menuShow">
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<input type="hidden" id="urlContext" value="<%= request.getContextPath() %>" >
